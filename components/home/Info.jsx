@@ -1,7 +1,7 @@
 const Info = () => {
     return (
         <>
-    <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
+    <article className="max-w-3xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
 	<div className="w-full mx-auto space-y-4 text-center">
 		<p className="text-xs font-semibold tracking-wider uppercase">#TailwindCSS</p>
 		<h1 className="text-4xl font-bold leading-tight md:text-5xl">Interdum et malesuada fames ac ante ipsum primis in faucibus?</h1>
