@@ -1,6 +1,17 @@
 import { useState } from "react"
 import Link from "next/link";
 const Navbar = () => {
+  //const myName = "Bonface Thuranira";
+  const navData = {
+    name: "BONFACE THURANIRA",
+    intro: "Online Writer",
+    home: "Home",
+    why: "Why Me?",
+    services: "Services",
+    samples: "Writing Samples",
+    testimonials: "Testimonials",
+    contact: "Contact Me"
+  }
     const [navbar, setNavbar] = useState(false);
     return (
         <>
@@ -9,10 +20,11 @@ const Navbar = () => {
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="https://flowbite.com/" class="flex items-center space-x-2 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
-  <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+  <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
 </svg>
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"> Techblog</span>
+        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-serif display-4">{navData.name }
+        <p class="text-sm text-center italic">{navData.intro}</p></span>
     </a>
             
               <div className="md:hidden">
@@ -62,24 +74,35 @@ const Navbar = () => {
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="text-white">
                   <Link href="/">
-                    <a>Home</a>
+                    <a>{navData.home}</a>
                   </Link>
                 </li>
                 <li className="text-white">
                   <Link href="/blogs">
-                    <a>About</a>
+                    <a>{navData.why}</a>
+                  </Link>
+                </li>
+                <li className="text-white">
+                  <Link href="/blogs">
+                    <a>{navData.services}</a>
+                  </Link>
+                </li>
+                <li className="text-white">
+                  <Link href="/blogs">
+                    <a>{navData.samples}</a>
+                  </Link>
+                </li>
+                <li className="text-white">
+                  <Link href="/blogs">
+                    <a>{navData.testimonials}</a>
                   </Link>
                 </li>
                 <li className="text-white">
                   <Link href="/about">
-                  <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Github</button>
+                  <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">{navData.contact}</button>
                   </Link>
                   </li>
-                <li className="text-white">
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-</svg>
-                </li>
+          
               </ul>
             </div>
           </div>
