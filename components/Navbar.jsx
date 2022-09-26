@@ -78,7 +78,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/blogs">
+                  <Link href="/why">
                     <a>{navData.why}</a>
                   </Link>
                 </li>
