@@ -83,17 +83,17 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/blogs">
+                  <Link href="/services">
                     <a>{navData.services}</a>
                   </Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/blogs">
+                  <Link href="/samples">
                     <a>{navData.samples}</a>
                   </Link>
                 </li>
                 <li className="text-white">
-                  <Link href="/blogs">
+                  <Link href="/testimonials">
                     <a>{navData.testimonials}</a>
                   </Link>
                 </li>
