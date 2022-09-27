@@ -19,12 +19,12 @@ const Navbar = () => {
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <a href="https://flowbite.com/" class="flex items-center space-x-2 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+            <a href="https://flowbite.com/" className="flex items-center space-x-2 text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-pen-fill" viewBox="0 0 16 16">
   <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
 </svg>
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-serif display-4">{navData.name }
-        <p class="text-sm text-center italic">{navData.intro}</p></span>
+        <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white font-serif display-4">{navData.name }
+        <p className="text-sm text-center italic">{navData.intro}</p></span>
     </a>
             
               <div className="md:hidden">
