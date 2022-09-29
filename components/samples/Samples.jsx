@@ -1,4 +1,5 @@
-const Samples = () => {
+const Samples = (props) => {
+	const posts = props.posts;
     return (
         <>
 		

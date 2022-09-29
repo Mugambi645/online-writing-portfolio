@@ -1,29 +1,32 @@
 const Info = () => {
+	const data = {
+		paragraph_one : "Interdum et malesuada fames ac ante ipsum primis in faucibus? Interdum et malesuada fames ac ante ipsum primis in faucibus?",
+		paragraph_two: "Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.\
+        Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.",
+		name: "Leroy Jenkins",
+		paragraph_three: "   Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.\
+		Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh."
+	}
     return (
         <>
     <article className="max-w-3xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
 	<div className="w-full mx-auto space-y-4 text-center">
-		<p className="text-xs font-semibold tracking-wider uppercase">#TailwindCSS</p>
-		<h1 className="text-4xl font-bold leading-tight md:text-5xl">Interdum et malesuada fames ac ante ipsum primis in faucibus?</h1>
-		<p className="text-sm dark:text-gray-400">by
-			<a rel="noopener noreferrer" href="#" target="_blank" className="underline dark:text-violet-400">
-				<span itemprop="name">Leroy Jenkins</span>
-			</a>on
-			<time datetime="2021-02-12 15:34:18-0200">Feb 12th 2021</time>
-		</p>
+		<p className="text-xs font-semibold tracking-wider uppercase"></p>
+		<h1 className="text-3xl font-semibold leading-tight md:text-5xl">{data.paragraph_one}</h1>
+	
 	</div>
 	<div className="dark:text-gray-100">
-		<p>Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.
-        Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.
+		<p>
+			{data.paragraph_two}
         </p>
 	</div>
 	<div className="pt-12 border-t dark:border-gray-700">
 		<div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
 			<img src="https://source.unsplash.com/75x75/?portrait" alt="" className="self-center flex-shrink-0 w-50 h-50 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-700" />
 			<div className="flex flex-col">
-				<h4 className="text-lg font-semibold">Leroy Jenkins</h4>
-				<p className="dark:text-gray-400">Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.
-                Sed non nibh iaculis, posuere diam vitae, consectetur neque. Integer velit ligula, semper sed nisl in, cursus commodo elit. Pellentesque sit amet mi luctus ligula euismod lobortis ultricies et nibh.</p>
+				<h4 className="text-lg font-semibold">{data.name}</h4>
+				<p className="dark:text-gray-400">{data.paragraph_three}
+  </p>
 			</div>
 		</div>
 		<div className="flex justify-center pt-4 space-x-4 align-center">
