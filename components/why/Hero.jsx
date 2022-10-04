@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import styles from "../.././styles/Header.module.css";
-
+import Typewriter from 'typewriter-effect';
 const { heroContent, heroWrapper, imageWrapper } = styles;
 
 const IMAGE_URL =
@@ -22,7 +22,23 @@ const Hero = (props) => {
 
       <div className={heroContent}>
         <h1 className='p-10'></h1>
-       <h1 className='text-4xl font-bold text-white  font-sans p-10 flex flex-col'>{props.title}</h1>
+       <h1 className='text-4xl font-bold text-white  font-sans p-10'>
+       <Typewriter
+        onInit={(typewriter) => {
+          typewriter.typeString('Why me?')
+            .callFunction(() => {
+              console.log('String typed out!');
+            })
+            .pauseFor(2500000000000000)
+            .deleteAll()
+            .callFunction(() => {
+              console.log('All strings were deleted');
+            })
+            .start();
+        }}
+      />
+       </h1>
+   
       </div>
     </div>
 
