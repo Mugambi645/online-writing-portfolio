@@ -7,7 +7,7 @@ import TestimonialComponent from '../components/testimonials/TestimonialComponen
 export default function Testimonials() {
   return (
   <div>
-<Hero/>
+<Hero title="Testimonials" />
 <TestimonialComponent/>
 <MoreInfo/>
     </div>
