@@ -7,7 +7,7 @@ import MoreInfo from '../components/home/MoreInfo'
 export default function Home() {
   return (
   <div>
-<Hero/>
+<Hero title="Skilled web writer based in Nairobi,Kenya"/>
 <Info/>
 <MoreInfo/>
     </div>
