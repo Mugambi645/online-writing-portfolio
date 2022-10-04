@@ -1,8 +1,11 @@
+
+
 const Samples = (props) => {
-	const posts = props.posts;
+
     return (
         <>
-		
+	
+	
  <div class="p-10 grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5 ">
 	   <div className="max-w-md p-6 overflow-hidden rounded-lg shadow dark:bg-gray-900 dark:text-gray-100 border hover:bg-gray-700 hover:text-white">
 	<article>
