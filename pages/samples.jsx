@@ -7,7 +7,7 @@ import Samples from '../components/samples/Samples'
 export default function Sample() {
   return (
   <div>
-<Hero/>
+<Hero title="Sample project"/>
 <Samples/>
 <MoreInfo/>
     </div>
