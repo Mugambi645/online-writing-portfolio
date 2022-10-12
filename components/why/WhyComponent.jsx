@@ -1,3 +1,4 @@
+import Image from "next/image";
 const WhyComponent = () => {
     return (
         <>
@@ -8,7 +9,7 @@ const WhyComponent = () => {
 		<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
   
   <div className="w-6/12 sm:w-4/12 px-4">
-    <img src="/heros/writing.jpg" alt="..." className="shadow rounded-lg max-w-full h-auto align-middle border-none" />
+    <Image src="/heros/writing.jpg" height="300vh" width="300vh" alt="..." className="shadow rounded-lg max-w-full h-auto align-middle border-none" />
 
 </div>
 			<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
